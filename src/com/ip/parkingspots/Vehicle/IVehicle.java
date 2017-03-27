@@ -6,4 +6,6 @@ import com.ip.parkingspots.person.AbstractPerson;
 public interface IVehicle {
 
     AbstractPerson getOwner();
+    void setOwner(AbstractPerson person);
+    
 }
