@@ -1,9 +1,12 @@
 package com.ip.parkingspots.slots;
 
+import com.ip.parkingspots.SlotType;
+import com.ip.parkingspots.Vehicle.IVehicle;
+
 import java.util.UUID;
 
 public abstract class AbstractParkingSlot {
-    private Vehicle occupant;
+    private IVehicle occupant;
     private final UUID id;
     SlotType type;
 
@@ -13,11 +16,11 @@ public abstract class AbstractParkingSlot {
         id = UUID.randomUUID();
     }
 
-    public Vehicle getOccupant() {
+    public IVehicle getOccupant() {
         return occupant;
     }
 
-    public void setOccupant(Vehicle occupant) {
+    public void setOccupant(IVehicle occupant) {
         this.occupant = occupant;
     }
 
