@@ -1,8 +1,5 @@
 package com.ip.parkingspots;
 
-/**
- * Created by ebudaca on 27-Mar-17.
- */
 public class Pass {
     private int price;
     private SlotType type;
