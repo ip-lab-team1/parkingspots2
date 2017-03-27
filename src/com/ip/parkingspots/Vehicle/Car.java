@@ -13,7 +13,9 @@ public class Car implements IVehicle {
     int id;
 
     public Car(){
+
         id = random.nextInt(10000);
+
     }
 
     @Override
